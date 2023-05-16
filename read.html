@@ -1,0 +1,2293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230514035755">
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body style="opacity: 0">
+
+	<div class="wrapper">
+		<!--<header class="header">
+	<div class="header__container">
+
+	</div>
+</header>-->
+
+		<main class="main">
+			<section id="section" class="main__section section-hello">
+				<div class="section-hello__container">
+					<div class="section-hello__content">
+						<div class="section-hello__languages languages">
+							<select name="form[]" class="languages__select">
+								<option value="1" data-asset="img/icons/icons.svg#rus" selected>
+									Русский
+								</option>
+								<option value="2" data-asset="img/icons/icons.svg#eng">
+									English
+								</option>
+								<option value="3" data-asset="img/icons/icons.svg#ger">
+									Español
+								</option>
+							</select>
+						</div>
+
+						<h1 class="section-hello__title title">
+							{$LANG.SITE_NAME}
+						</h1>
+						<p class="section-hello__subtitle subtitle">
+							{$LANG.MAIN_TEXT}
+						</p>
+
+						<div class="section-hello__clock clock">
+							<div class="clock__container grid">
+								<div class="clock__content grid">
+									<div class="clock__circle">
+										<a href="#" class="clock__logo">{$LANG.SITE_NAME}</a>
+										<div class="clock__date">
+											<span>{$LANG.START_DATE}</span>
+										</div>
+										<span class="clock__twelve"></span>
+										<span class="clock__three"></span>
+										<span class="clock__six"></span>
+										<span class="clock__nine"></span>
+
+										<div class="clock__rounder"></div>
+
+										<div class="clock__hour" id="clock-hour"></div>
+										<div class="clock__minutes" id="clock-minutes"></div>
+										<div class="clock__seconds" id="clock-seconds"></div>
+
+										<!-- Dark/light button -->
+										<!--<div class="clock__theme">
+										<i class='bx bxs-moon' id="theme-button"></i>
+									</div>-->
+
+									</div>
+									<div class="clock__circle-big">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="section-hello__how how">
+							<h2 class="how__h2 h2">{$LANG.HOW_WORKS}</h2>
+							<nav class="how__links links">
+								<a href="#" data-popup="#read" class="links__link link">
+									<div class="link__but but">
+										<svg class="link__svg link__svg-read">
+											<use href="img/icons/icons.svg#read"></use>
+										</svg>
+									</div>
+									<span class="link__title">{$LANG.READ}</span>
+
+								</a>
+							</nav>
+							<nav class="how__links how__links-circle links">
+								<a href="#" data-popup="#reg" data-start class="links__link link">
+									<div class="link__but but but-circle">
+										<span>
+											{$LANG.SIGN_UP}</span>
+									</div>
+								</a>
+								<a href="#" data-popup="#input" class="links__link">
+									<div class="link__but but but-circle">
+										<span>{$LANG.LOG_IN}</span>
+									</div>
+								</a>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<h2 class="footer__title title">Методы Оплаты</h2>
+				<nav class="footer__links links">
+					<a href="#" class="links__link">
+						<div class="link__but but link__but-system">
+							<svg class="link__svg link__svg-system">
+								<use href="img/icons/icons.svg#visa"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" class="links__link">
+						<div class="link__but but link__but-system">
+							<svg class="link__svg link__svg-system">
+								<use href="img/icons/icons.svg#maestro"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" class="links__link">
+						<div class="link__but but link__but-system">
+							<svg class="link__svg link__svg-system">
+								<use href="img/icons/icons.svg#ae"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" class="links__link">
+						<div class="link__but but link__but-system">
+							<svg class="link__svg link__svg-system">
+								<use href="img/icons/icons.svg#disc"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" class="links__link">
+						<div class="link__but but link__but-system">
+							<svg class="link__svg link__svg-system">
+								<use href="img/icons/icons.svg#chase"></use>
+							</svg>
+						</div>
+					</a>
+				</nav>
+				<nav class="footer__links footer__links-pay links">
+					<div class="links__link">
+						<div class="link__but but link__but-pay">
+							<svg class="link__svg link__svg-pay">
+								<use href="img/icons/icons.svg#ap"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="links__link">
+						<div class="link__but but link__but-pay">
+							<svg class="link__svg link__svg-pay">
+								<use href="img/icons/icons.svg#gp"></use>
+							</svg>
+						</div>
+					</div>
+
+				</nav>
+				<div class="footer__text-links text-links">
+					<a href="#" data-popup="#ua" class="text-links__link">Пользовательское Соглашение</a>
+					<a href="#" data-popup="#questions" class="text-links__link">Часто Задаваемые Вопросы</a>
+				</div>
+				<div class="footer__copyright">© 2023️ все права защищены</div>
+			</div>
+		</footer>
+	</div>
+	<div id="read" aria-hidden="true" class="popup" data-lp>
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__head">
+					<h2 class="popup__title h2">Прочтите Статью </h2>
+					<button data-close type="button" class="popup__close">
+						<svg>
+							<use href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__subcontent popup__subcontent-read">
+					<article class="popup__article">
+
+						<p class="popup__p-left p-left">
+							Иногда бывает важным отправить сообщение в определённое время при определённых условиях.
+						</p>
+						<p class="popup__p-left p-left">
+							Наш сервис именно для этого. Вы можете составить письмо, прикрепить к нему документ
+							или голосовое
+							сообщение.
+							установить дату отправки, и указать адреса отправки. На маил, телефон, в любой мессенджер,
+							или по физическому адресу.
+							В установленный срок, наш сервис выполнит данную услугу.
+						</p>
+					</article>
+
+					<div class="popup__numlist numlist">
+						<div class="numlist__title">Так как же работает сервис HideSend?</div>
+						<ol class="numlist__list">
+							<li class="numlist__li">Зарегистрируйте персональный сейф.</li>
+							<li class="numlist__li">Сохранить текстовое или голосовое сообщение.</li>
+							<li class="numlist__li">Укажите адреса и время доставки.</li>
+							<li class="numlist__li">Оплатите сервисный сбор.</li>
+						</ol>
+					</div>
+
+					<article class="popup__article">
+						<p class="popup__p-left p-left">
+							Теперь у вас есть персональный сейф с вашим сообщением.
+						</p>
+						<p class="popup__p-left p-left">
+							Вы можете всегда вернутся, отредактировать послание, изменить дату отправки, либо вовсе
+							его отменить.
+						</p>
+						<p class="popup__p-left p-left">
+							Ваш сейф закреплён за вами навсегда, ваши сообщения будут сохранены и отправлены во время,
+							не имея
+							срока давности.
+						</p>
+					</article>
+					<nav class="popup__links links">
+						<div class="clock links__link popup__clock">
+							<div class="clock__content grid">
+								<div class="clock__circle clock__circle-hund">
+									<a href="#" class="clock__logo clock__logo-hund">HideSend</a>
+									<span class="clock__twelve clock__twelve-hund"></span>
+									<span class="clock__three clock__three-hund"></span>
+									<span class="clock__six clock__six-hund"></span>
+									<span class="clock__nine clock__nine-hund"></span>
+
+									<div class="clock__rounder clock__rounder-hund"></div>
+									<div class="clock__hour clock__hour-hund" id="clock-hour"></div>
+									<div class="clock__minutes clock__minutes-hund" id="clock-minutes"></div>
+									<div class="clock__seconds clock__seconds-hund" id="clock-seconds"></div>
+								</div>
+								<div class="clock__circle-big clock__circle-hund-big">
+								</div>
+
+							</div>
+						</div>
+
+						<a href="#" class="links__link link">
+							<div href="#" data-popup="#reg" class="link__but but but-circle">
+								<span>
+									Создать Аккаунт</span>
+							</div>
+						</a>
+					</nav>
+					<p class="popup__p subtitle">Следует отметить, что новая модель организационной деятельности требует</p>
+					<a href="#share" class="but popup__but but-white but-share">
+						<span>Поделиться Сайтом</span>
+						<svg>
+							<use href="img/icons/icons-mono.svg#share"></use>
+						</svg>
+					</a>
+					<div id="share" class="popup__share share">
+						<div class="share__content">
+							<div class="share__title title">Поделиться сайтом</div>
+							<button type="button" class="popup__close share__close">
+								<svg>
+									<use href="img/icons/icons.svg#close"></use>
+								</svg>
+							</button>
+
+							<p class="share__subtitle subtitle">Поделитесь сайтом с друзьями</p>
+							<nav class="how__links how__links-circle links">
+								<a href="#" class="links__link link">
+									<div class="link__but but but-circle but-circle-mini">
+										<svg>
+											<use href="img/icons/icons.svg#fb"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="links__link">
+									<div class="link__but but but-circle but-circle-mini">
+										<svg viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.31885 0H2.68115C1.20276 0 0 1.20276 0 2.68115V6.31885C0 7.79724 1.20276 9 2.68115 9H6.31885C7.79724 9 9 7.79724 9 6.31885V2.68115C8.99998 1.20276 7.79723 0 6.31885 0ZM8.0946 6.31885C8.0946 7.29956 7.29956 8.0946 6.31885 8.0946H2.68115C1.70044 8.0946 0.9054 7.29956 0.9054 6.31885V2.68115C0.9054 1.70042 1.70044 0.9054 2.68115 0.9054H6.31885C7.29956 0.9054 8.0946 1.70042 8.0946 2.68115V6.31885Z" fill="url(#paint0_linear_716_7497)" />
+											<path d="M4.50012 2.1724C3.21662 2.1724 2.1724 3.21662 2.1724 4.50011C2.1724 5.7836 3.21662 6.82783 4.50012 6.82783C5.78363 6.82783 6.82785 5.78362 6.82785 4.50011C6.82785 3.2166 5.78363 2.1724 4.50012 2.1724ZM4.50012 5.92245C3.71459 5.92245 3.0778 5.28566 3.0778 4.50012C3.0778 3.71459 3.71461 3.0778 4.50012 3.0778C5.28566 3.0778 5.92245 3.71459 5.92245 4.50012C5.92245 5.28564 5.28564 5.92245 4.50012 5.92245Z" fill="url(#paint1_linear_716_7497)" />
+											<path d="M6.83221 2.7475C7.14026 2.7475 7.38998 2.49778 7.38998 2.18973C7.38998 1.88169 7.14026 1.63196 6.83221 1.63196C6.52416 1.63196 6.27444 1.88169 6.27444 2.18973C6.27444 2.49778 6.52416 2.7475 6.83221 2.7475Z" fill="url(#paint2_linear_716_7497)" />
+											<defs>
+												<linearGradient id="paint0_linear_716_7497" x1="4.5" y1="8.9738" x2="4.5" y2="0.0699045" gradientUnits="userSpaceOnUse">
+													<stop stop-color="#E09B3D" />
+													<stop offset="0.3" stop-color="#C74C4D" />
+													<stop offset="0.6" stop-color="#C21975" />
+													<stop offset="1" stop-color="#7024C4" />
+												</linearGradient>
+												<linearGradient id="paint1_linear_716_7497" x1="4.5" y1="13.1489" x2="4.5" y2="-4.06437" gradientUnits="userSpaceOnUse">
+													<stop stop-color="#E09B3D" />
+													<stop offset="0.3" stop-color="#C74C4D" />
+													<stop offset="0.6" stop-color="#C21975" />
+													<stop offset="1" stop-color="#7024C4" />
+												</linearGradient>
+												<linearGradient id="paint2_linear_716_7497" x1="6.83222" y1="8.97387" x2="6.83222" y2="0.0699778" gradientUnits="userSpaceOnUse">
+													<stop stop-color="#E09B3D" />
+													<stop offset="0.3" stop-color="#C74C4D" />
+													<stop offset="0.6" stop-color="#C21975" />
+													<stop offset="1" stop-color="#7024C4" />
+												</linearGradient>
+											</defs>
+										</svg>
+
+									</div>
+								</a>
+								<a href="#" class="links__link">
+									<div class="link__but but but-circle but-circle-mini">
+										<svg>
+											<use href="img/icons/icons.svg#tg"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="links__link">
+									<div class="link__but but but-circle but-circle-mini">
+										<svg viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 9L0.636108 6.69046C0.244059 6.01301 0.0369091 5.24732 0.0369091 4.45948C0.0369091 2.00035 2.0489 0 4.51721 0C5.71561 0 6.84001 0.463878 7.68822 1.30814C8.53395 2.14994 8.99999 3.27158 8.99999 4.46194C8.99999 6.92108 6.988 8.92143 4.51969 8.92143H4.51721C3.76755 8.92143 3.03043 8.73493 2.37702 8.37898L0 9ZM2.48545 7.57409L2.62107 7.65512C3.19308 7.99385 3.84896 8.1705 4.51721 8.17297H4.51969C6.5737 8.17297 8.24291 6.51134 8.24291 4.46704C8.24291 3.47548 7.85581 2.54526 7.15312 1.84584C6.45044 1.14642 5.51588 0.758657 4.51969 0.758657C2.46567 0.758657 0.793987 2.42028 0.793987 4.46458C0.793987 5.164 0.991247 5.84637 1.36352 6.43786L1.45235 6.57778L1.07513 7.94481L2.48545 7.57409Z" fill="white" />
+											<path d="M0 9L0.636164 6.68896C0.242793 6.01269 0.0384224 5.24483 0.0384224 4.4593C0.0384224 2.00077 2.04883 0 4.5192 0C5.71725 0 6.84394 0.465232 7.68941 1.30684C8.53507 2.15099 9.00255 3.26964 8.99999 4.46194C8.99999 6.92048 6.99006 8.92143 4.51969 8.92143H4.51721C3.76615 8.92143 3.02988 8.73306 2.37597 8.37963L0 9Z" fill="url(#paint0_linear_716_7479)" />
+											<path d="M0 9L0.636108 6.69046C0.244059 6.01301 0.0369091 5.24732 0.0369091 4.45948C0.0369091 2.00035 2.0489 0 4.51721 0C5.71561 0 6.84001 0.463878 7.68822 1.30814C8.53395 2.14994 8.99999 3.27158 8.99999 4.46194C8.99999 6.92108 6.988 8.92143 4.51969 8.92143H4.51721C3.76755 8.92143 3.03043 8.73493 2.37702 8.37898L0 9ZM2.48545 7.57409L2.62107 7.65512C3.19308 7.99385 3.84896 8.1705 4.51721 8.17297H4.51969C6.5737 8.17297 8.24291 6.51134 8.24291 4.46704C8.24291 3.47548 7.85581 2.54526 7.15312 1.84584C6.45044 1.14642 5.51588 0.758657 4.51969 0.758657C2.46567 0.758657 0.793987 2.42028 0.793987 4.46458C0.793987 5.164 0.991247 5.84637 1.36352 6.43786L1.45235 6.57778L1.07513 7.94481L2.48545 7.57409Z" fill="url(#paint1_linear_716_7479)" />
+											<path d="M3.55136 2.74946C3.48028 2.57826 3.40516 2.576 3.33827 2.57375C3.28394 2.57149 3.21915 2.57149 3.15645 2.57149C3.09374 2.57149 2.99139 2.59633 2.9037 2.69992C2.816 2.80125 2.57148 3.04909 2.57148 3.55381C2.57148 4.05627 2.91208 4.54275 2.95802 4.61262C3.00605 4.68022 3.61406 5.7458 4.57942 6.1558C5.38182 6.49594 5.54479 6.42833 5.71808 6.41268C5.89152 6.39461 6.28014 6.16484 6.35946 5.92604C6.43892 5.68723 6.43892 5.48215 6.41378 5.43939C6.39073 5.39663 6.32609 5.37179 6.23196 5.31999C6.13798 5.2682 5.66989 5.02036 5.58429 4.98663C5.4966 4.95291 5.4339 4.93484 5.3712 5.03843C5.3085 5.13976 5.12668 5.37179 5.07026 5.43939C5.01594 5.507 4.95952 5.51604 4.86555 5.46424C4.77157 5.41245 4.46435 5.30434 4.10295 4.95727C3.82087 4.687 3.63082 4.35122 3.57441 4.24989C3.52008 4.14856 3.56812 4.09225 3.61616 4.04045C3.65791 3.99544 3.71013 3.92105 3.75817 3.86022C3.80621 3.79939 3.82087 3.75889 3.85215 3.68902C3.88342 3.62142 3.86891 3.56059 3.84377 3.50879C3.82087 3.45684 3.63696 2.95228 3.55136 2.74946Z" fill="white" />
+											<defs>
+												<linearGradient id="paint0_linear_716_7479" x1="4.5" y1="9.00007" x2="4.5" y2="0.000107288" gradientUnits="userSpaceOnUse">
+													<stop stop-color="#20B038" />
+													<stop offset="1" stop-color="#60D66A" />
+												</linearGradient>
+												<linearGradient id="paint1_linear_716_7479" x1="4.49991" y1="9" x2="4.49991" y2="0.000175949" gradientUnits="userSpaceOnUse">
+													<stop stop-color="#F9F9F9" />
+													<stop offset="1" stop-color="white" />
+												</linearGradient>
+											</defs>
+										</svg>
+
+									</div>
+								</a>
+								<a href="#" class="links__link">
+									<div class="link__but but but-circle but-circle-mini">
+										<svg>
+											<use href="img/icons/icons.svg#skype"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="links__link">
+									<div class="link__but but but-circle but-circle-mini">
+										<svg>
+											<use href="img/icons/icons.svg#viber"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="links__link">
+									<div class="link__but but but-circle but-circle-mini">
+										<svg>
+											<use href="img/icons/icons.svg#gmail"></use>
+										</svg>
+									</div>
+								</a>
+							</nav>
+							<div class="how__copy copy">
+								<input id="copy-link" type="text" class="copy__input" readonly value="www.hidesend.com">
+								<a href="#!" id="copy-but" class="copy__but but-purple">
+									<span>Копировать </span>
+									<svg>
+										<use href="img/icons/icons.svg#copy"></use>
+									</svg>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+		</div>
+	</div>
+	<div id="ua" aria-hidden="true" class="popup" data-lp>
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__head">
+					<h2 class="popup__title h2">User Agreement</h2>
+					<button data-close type="button" class="popup__close">
+						<svg>
+							<use href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__subcontent popup__subcontent-read">
+
+					<p class="popup__p-left p-left">
+						This User Agreement (the «Agreement») governs your use of the Virtual Safe Service (the «Service»)
+						provided by [company name] (the «Company»). By using the Service, you agree to be bound by the terms
+						and conditions of this Agreement.
+					</p>
+
+					<div class="popup__ollist ollist">
+						<ol class="ollist__list">
+							<li class="ollist__li">
+								<div class="ollist__title">1. Service Description</div>
+								<p class="popup__p-left p-left">
+
+									The Service provides a virtual safe for storing files, including text and voice
+									messages, subject to certain size limitations. Registration for the Service is free, but
+									a service fee is required for the storage of information. This is a one-time payment,
+									and no further fees are required in the future. In exchange for the service fee, we
+									provide a permanent place for your information in this virtual safe. You may also cancel
+									the Service within 14 days and receive a refund. </p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title"> 2. User Obligations</div>
+								<p class="popup__p-left p-left">
+									You agree to use the Service only for lawful purposes and in accordance with this
+									Agreement. You agree not to use the Service for any illegal or unauthorized purpose,
+									including but not limited to copyright infringement or the transmission of any material
+									that is unlawful, defamatory, abusive, or offensive.</p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">3. Intellectual Property Rights</div>
+								<p class="popup__p-left p-left">
+
+									The Company owns all intellectual property rights in the Service and any materials
+									provided to you as part of the Service. You agree not to copy, modify, or distribute any
+									of the materials provided to you as part of the Service without the Company's prior
+									written consent.</p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">4. Limitation of Liability</div>
+								<p class="popup__p-left p-left">
+									The Company is not liable for any damages arising from your use of the Service,
+									including but not limited to direct, indirect, incidental, punitive, and consequential
+									damages. The Company is not liable for any loss of data or information stored in the
+									virtual safe.
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">5. Disclaimer of Warranties</div>
+								<p class="popup__p-left p-left">
+									The Service is provided "as is" and without warranty of any kind, express or implied,
+									including but not limited to the warranties of merchantability, fitness for a particular
+									purpose, and non-infringement.</p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">6. Termination</div>
+								<p class="popup__p-left p-left">
+
+									The Company may terminate this Agreement at any time for any reason without notice. You
+									may terminate this Agreement by canceling the Service within the allotted time period.
+								</p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">7. Governing Law</div>
+								<p class="popup__p-left p-left">
+									This Agreement shall be governed by and construed in accordance with the laws of
+									[state/country], without regard to its conflict of law provisions.
+								</p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">8. Entire Agreement</div>
+								<p class="popup__p-left p-left">
+									This Agreement constitutes the entire agreement between you and the Company regarding
+									the use of the Service and supersedes all prior agreements and understandings.
+								</p>
+							</li>
+						</ol>
+					</div>
+
+
+
+					<nav class="popup__links links">
+						<div class="clock links__link popup__clock">
+							<div class="clock__content grid">
+								<div class="clock__circle clock__circle-mini">
+									<a href="#" class="clock__logo clock__logo-mini">HideSend</a>
+									<span class="clock__twelve clock__twelve-mini"></span>
+									<span class="clock__three clock__three-mini"></span>
+									<span class="clock__six clock__six-mini"></span>
+									<span class="clock__nine clock__nine-mini"></span>
+
+									<div class="clock__rounder clock__rounder-mini"></div>
+									<div class="clock__hour clock__hour-mini" id="clock-hour"></div>
+									<div class="clock__minutes clock__minutes-mini" id="clock-minutes"></div>
+									<div class="clock__seconds clock__seconds-mini" id="clock-seconds"></div>
+
+									<!-- Dark/light button -->
+									<!--<div class="clock__theme">
+                                            <i class='bx bxs-moon' id="theme-button"></i>
+                                        </div>-->
+
+								</div>
+								<div class="clock__circle-big clock__circle-mini-big">
+								</div>
+
+							</div>
+						</div>
+
+						<a href="#" class="links__link link">
+							<div data-popup="#reg" class="link__but but but-circle">
+								<span>
+									Создать Аккаунт</span>
+							</div>
+						</a>
+					</nav>
+
+				</div>
+
+
+			</div>
+
+
+
+		</div>
+	</div>
+	<div id="pk" aria-hidden="true" class="popup" data-lp>
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__head">
+					<h2 class="popup__title h2">Политика конфиденциальности</h2>
+					<button data-close type="button" class="popup__close">
+						<svg>
+							<use href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__subcontent popup__subcontent-read">
+
+					<p class="popup__p-left p-left">
+						This User Agreement (the «Agreement») governs your use of the Virtual Safe Service (the «Service»)
+						provided by [company name] (the «Company»). By using the Service, you agree to be bound by the terms
+						and conditions of this Agreement.
+					</p>
+
+					<div class="popup__ollist ollist">
+						<ol class="ollist__list">
+							<li class="ollist__li">
+								<div class="ollist__title">1. Service Description</div>
+								<p class="popup__p-left p-left">
+
+									The Service provides a virtual safe for storing files, including text and voice
+									messages, subject to certain size limitations. Registration for the Service is free, but
+									a service fee is required for the storage of information. This is a one-time payment,
+									and no further fees are required in the future. In exchange for the service fee, we
+									provide a permanent place for your information in this virtual safe. You may also cancel
+									the Service within 14 days and receive a refund. </p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title"> 2. User Obligations</div>
+								<p class="popup__p-left p-left">
+									You agree to use the Service only for lawful purposes and in accordance with this
+									Agreement. You agree not to use the Service for any illegal or unauthorized purpose,
+									including but not limited to copyright infringement or the transmission of any material
+									that is unlawful, defamatory, abusive, or offensive.</p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">3. Intellectual Property Rights</div>
+								<p class="popup__p-left p-left">
+
+									The Company owns all intellectual property rights in the Service and any materials
+									provided to you as part of the Service. You agree not to copy, modify, or distribute any
+									of the materials provided to you as part of the Service without the Company's prior
+									written consent.</p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">4. Limitation of Liability</div>
+								<p class="popup__p-left p-left">
+									The Company is not liable for any damages arising from your use of the Service,
+									including but not limited to direct, indirect, incidental, punitive, and consequential
+									damages. The Company is not liable for any loss of data or information stored in the
+									virtual safe.
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">5. Disclaimer of Warranties</div>
+								<p class="popup__p-left p-left">
+									The Service is provided "as is" and without warranty of any kind, express or implied,
+									including but not limited to the warranties of merchantability, fitness for a particular
+									purpose, and non-infringement.</p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">6. Termination</div>
+								<p class="popup__p-left p-left">
+
+									The Company may terminate this Agreement at any time for any reason without notice. You
+									may terminate this Agreement by canceling the Service within the allotted time period.
+								</p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">7. Governing Law</div>
+								<p class="popup__p-left p-left">
+									This Agreement shall be governed by and construed in accordance with the laws of
+									[state/country], without regard to its conflict of law provisions.
+								</p>
+							</li>
+							<li class="ollist__li">
+								<div class="ollist__title">8. Entire Agreement</div>
+								<p class="popup__p-left p-left">
+									This Agreement constitutes the entire agreement between you and the Company regarding
+									the use of the Service and supersedes all prior agreements and understandings.
+								</p>
+							</li>
+						</ol>
+					</div>
+
+
+
+					<nav class="popup__links links">
+						<div class="clock links__link popup__clock">
+							<div class="clock__content grid">
+								<div class="clock__circle clock__circle-mini">
+									<a href="#" class="clock__logo clock__logo-mini">HideSend</a>
+									<span class="clock__twelve clock__twelve-mini"></span>
+									<span class="clock__three clock__three-mini"></span>
+									<span class="clock__six clock__six-mini"></span>
+									<span class="clock__nine clock__nine-mini"></span>
+
+									<div class="clock__rounder clock__rounder-mini"></div>
+									<div class="clock__hour clock__hour-mini" id="clock-hour"></div>
+									<div class="clock__minutes clock__minutes-mini" id="clock-minutes"></div>
+									<div class="clock__seconds clock__seconds-mini" id="clock-seconds"></div>
+
+									<!-- Dark/light button -->
+									<!--<div class="clock__theme">
+                                            <i class='bx bxs-moon' id="theme-button"></i>
+                                        </div>-->
+
+								</div>
+								<div class="clock__circle-big clock__circle-mini-big">
+								</div>
+
+							</div>
+						</div>
+
+						<a href="#" class="links__link link">
+							<div class="link__but but but-circle">
+								<span>
+									Создать Аккаунт</span>
+							</div>
+						</a>
+					</nav>
+
+				</div>
+
+
+			</div>
+
+
+
+		</div>
+	</div>
+	<div id="input" aria-hidden="true" class="popup" data-lp>
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__head">
+					<h2 class="popup__title h2">Вход в Аккаунт</h2>
+					<button data-close type="button" class="popup__close">
+						<svg>
+							<use href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__subcontent">
+					<form data-dev action="#" class="popup__form form form-input">
+						<div class="form__content form-input__content">
+
+							<div class="form__str">
+								<div class="form__input">
+									<div class="form__key">Почта</div>
+									<input id="mail-reg" data-validate="email" data-required="email" data-error="Введите почту" placeholder="namemail@gmail.com" type="text">
+									<div class="form__resetinput">
+
+									</div>
+								</div>
+							</div>
+
+							<div class="form__str">
+								<div class="form__input input">
+									<div class="form__key">Пароль</div>
+
+									<input id="password-reg" data-required data-validate autocomplete="off" type="password" name="form[]" data-error="Придумайте пароль" placeholder="********">
+									<div class="form__viewpass"></div>
+
+								</div>
+								<a href="#" data-popup="#recovery" class="form__resetpwd">Забыли пароль?</a>
+							</div>
+
+
+							<div class="form__label">
+								<input type="checkbox" name="check" id="rem-me">
+								<label for="rem-me">Запомнить меня</label>
+							</div>
+						</div>
+						<button type="submit" class="form__but form-input__but but-purple">Войти</button>
+						<div class="form__subbut">
+							Нет аккаунта? <a href="#reg">Создать Аккаунт</a>
+						</div>
+					</form>
+				</div>
+
+
+			</div>
+
+
+
+		</div>
+	</div>
+	<div id="recovery" aria-hidden="true" class="popup" data-lp>
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__head">
+					<h2 class="popup__title h2">Восстановление Пароля</h2>
+					<button data-close type="button" class="popup__close">
+						<svg>
+							<use href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__subcontent">
+					<form action="#" data-dev data-popup-message="#confirm-mail" class="popup__form confirm">
+						<div class="confirm__content confirm-pwd">
+							<div class="confirm__subtitle subtitle subtitle-light">
+								Введите вашу почту, и мы вышлем инструкции по получению нового пароля
+							</div>
+							<div class="form__input">
+								<div class="form__key">Почта</div>
+								<input data-required data-validate="email" data-error="Неверная почта" placeholder="Код подтверждения" type="text">
+
+								<div class="form__resetinput">
+								</div>
+							</div>
+
+						</div>
+						<button type="submit" class="confirm__but form__but but-purple">Подтвердить</button>
+
+					</form>
+
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<div id="questions" aria-hidden="true" class="popup" data-lp>
+		<div class="popup__wrapper">
+
+			<div class="popup__content">
+				<div class="popup__head">
+					<h2 class="popup__title h2">Часто Задаваемые Вопросы</h2>
+					<button data-close type="button" class="popup__close">
+						<svg>
+							<use href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__subcontent popup__subcontent-read">
+					<div data-spollers class="popup__spollers spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Как восстановить пароль?</button>
+							<div class="spollers__body">Контент спойлера. Но представители современных социальных резервов
+								набирают популярность среди слоёв населения, а значит, должны быть в равной степени
+								предоставлены.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Мой аккаунт взломали!</button>
+							<div class="spollers__body">Контент спойлера. Но представители современных социальных резервов
+								набирают популярность среди слоёв населения, а значит, должны быть в равной степени
+								предоставлены.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Как удалить аккаунт?</button>
+							<div class="spollers__body">Контент спойлера. Но представители современных социальных резервов
+								набирают популярность среди слоёв населения, а значит, должны быть в равной степени
+								предоставлены.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Как восстановить сообщения?</button>
+							<div class="spollers__body">Контент спойлера. Но представители современных социальных резервов
+								набирают популярность среди слоёв населения, а значит, должны быть в равной степени
+								предоставлены.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Лимит сообщений</button>
+							<div class="spollers__body">Контент спойлера. Но представители современных социальных резервов
+								набирают популярность среди слоёв населения, а значит, должны быть в равной степени
+								предоставлены.</div>
+						</div>
+					</div>
+				</div>
+				<a href="#share" class="but popup__but but-white but-share">
+					<span>Поделиться Сайтом</span>
+					<svg>
+						<use href="img/icons/icons-mono.svg#share"></use>
+					</svg>
+				</a>
+				<div id="share" class="popup__share share">
+					<div class="share__content">
+						<div class="share__title title">Поделиться сайтом</div>
+						<button type="button" class="popup__close share__close">
+							<svg>
+								<use href="img/icons/icons.svg#close"></use>
+							</svg>
+						</button>
+
+						<p class="share__subtitle subtitle">Поделитесь сайтом с друзьями</p>
+						<nav class="how__links how__links-circle links">
+							<a href="#" class="links__link link">
+								<div class="link__but but but-circle but-circle-mini">
+									<svg>
+										<use href="img/icons/icons.svg#fb"></use>
+									</svg>
+								</div>
+							</a>
+							<a href="#" class="links__link">
+								<div class="link__but but but-circle but-circle-mini">
+									<svg viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.31885 0H2.68115C1.20276 0 0 1.20276 0 2.68115V6.31885C0 7.79724 1.20276 9 2.68115 9H6.31885C7.79724 9 9 7.79724 9 6.31885V2.68115C8.99998 1.20276 7.79723 0 6.31885 0ZM8.0946 6.31885C8.0946 7.29956 7.29956 8.0946 6.31885 8.0946H2.68115C1.70044 8.0946 0.9054 7.29956 0.9054 6.31885V2.68115C0.9054 1.70042 1.70044 0.9054 2.68115 0.9054H6.31885C7.29956 0.9054 8.0946 1.70042 8.0946 2.68115V6.31885Z" fill="url(#paint0_linear_716_7497)" />
+										<path d="M4.50012 2.1724C3.21662 2.1724 2.1724 3.21662 2.1724 4.50011C2.1724 5.7836 3.21662 6.82783 4.50012 6.82783C5.78363 6.82783 6.82785 5.78362 6.82785 4.50011C6.82785 3.2166 5.78363 2.1724 4.50012 2.1724ZM4.50012 5.92245C3.71459 5.92245 3.0778 5.28566 3.0778 4.50012C3.0778 3.71459 3.71461 3.0778 4.50012 3.0778C5.28566 3.0778 5.92245 3.71459 5.92245 4.50012C5.92245 5.28564 5.28564 5.92245 4.50012 5.92245Z" fill="url(#paint1_linear_716_7497)" />
+										<path d="M6.83221 2.7475C7.14026 2.7475 7.38998 2.49778 7.38998 2.18973C7.38998 1.88169 7.14026 1.63196 6.83221 1.63196C6.52416 1.63196 6.27444 1.88169 6.27444 2.18973C6.27444 2.49778 6.52416 2.7475 6.83221 2.7475Z" fill="url(#paint2_linear_716_7497)" />
+										<defs>
+											<linearGradient id="paint0_linear_716_7497" x1="4.5" y1="8.9738" x2="4.5" y2="0.0699045" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#E09B3D" />
+												<stop offset="0.3" stop-color="#C74C4D" />
+												<stop offset="0.6" stop-color="#C21975" />
+												<stop offset="1" stop-color="#7024C4" />
+											</linearGradient>
+											<linearGradient id="paint1_linear_716_7497" x1="4.5" y1="13.1489" x2="4.5" y2="-4.06437" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#E09B3D" />
+												<stop offset="0.3" stop-color="#C74C4D" />
+												<stop offset="0.6" stop-color="#C21975" />
+												<stop offset="1" stop-color="#7024C4" />
+											</linearGradient>
+											<linearGradient id="paint2_linear_716_7497" x1="6.83222" y1="8.97387" x2="6.83222" y2="0.0699778" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#E09B3D" />
+												<stop offset="0.3" stop-color="#C74C4D" />
+												<stop offset="0.6" stop-color="#C21975" />
+												<stop offset="1" stop-color="#7024C4" />
+											</linearGradient>
+										</defs>
+									</svg>
+
+								</div>
+							</a>
+							<a href="#" class="links__link">
+								<div class="link__but but but-circle but-circle-mini">
+									<svg>
+										<use href="img/icons/icons.svg#tg"></use>
+									</svg>
+								</div>
+							</a>
+							<a href="#" class="links__link">
+								<div class="link__but but but-circle but-circle-mini">
+									<svg viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 9L0.636108 6.69046C0.244059 6.01301 0.0369091 5.24732 0.0369091 4.45948C0.0369091 2.00035 2.0489 0 4.51721 0C5.71561 0 6.84001 0.463878 7.68822 1.30814C8.53395 2.14994 8.99999 3.27158 8.99999 4.46194C8.99999 6.92108 6.988 8.92143 4.51969 8.92143H4.51721C3.76755 8.92143 3.03043 8.73493 2.37702 8.37898L0 9ZM2.48545 7.57409L2.62107 7.65512C3.19308 7.99385 3.84896 8.1705 4.51721 8.17297H4.51969C6.5737 8.17297 8.24291 6.51134 8.24291 4.46704C8.24291 3.47548 7.85581 2.54526 7.15312 1.84584C6.45044 1.14642 5.51588 0.758657 4.51969 0.758657C2.46567 0.758657 0.793987 2.42028 0.793987 4.46458C0.793987 5.164 0.991247 5.84637 1.36352 6.43786L1.45235 6.57778L1.07513 7.94481L2.48545 7.57409Z" fill="white" />
+										<path d="M0 9L0.636164 6.68896C0.242793 6.01269 0.0384224 5.24483 0.0384224 4.4593C0.0384224 2.00077 2.04883 0 4.5192 0C5.71725 0 6.84394 0.465232 7.68941 1.30684C8.53507 2.15099 9.00255 3.26964 8.99999 4.46194C8.99999 6.92048 6.99006 8.92143 4.51969 8.92143H4.51721C3.76615 8.92143 3.02988 8.73306 2.37597 8.37963L0 9Z" fill="url(#paint0_linear_716_7479)" />
+										<path d="M0 9L0.636108 6.69046C0.244059 6.01301 0.0369091 5.24732 0.0369091 4.45948C0.0369091 2.00035 2.0489 0 4.51721 0C5.71561 0 6.84001 0.463878 7.68822 1.30814C8.53395 2.14994 8.99999 3.27158 8.99999 4.46194C8.99999 6.92108 6.988 8.92143 4.51969 8.92143H4.51721C3.76755 8.92143 3.03043 8.73493 2.37702 8.37898L0 9ZM2.48545 7.57409L2.62107 7.65512C3.19308 7.99385 3.84896 8.1705 4.51721 8.17297H4.51969C6.5737 8.17297 8.24291 6.51134 8.24291 4.46704C8.24291 3.47548 7.85581 2.54526 7.15312 1.84584C6.45044 1.14642 5.51588 0.758657 4.51969 0.758657C2.46567 0.758657 0.793987 2.42028 0.793987 4.46458C0.793987 5.164 0.991247 5.84637 1.36352 6.43786L1.45235 6.57778L1.07513 7.94481L2.48545 7.57409Z" fill="url(#paint1_linear_716_7479)" />
+										<path d="M3.55136 2.74946C3.48028 2.57826 3.40516 2.576 3.33827 2.57375C3.28394 2.57149 3.21915 2.57149 3.15645 2.57149C3.09374 2.57149 2.99139 2.59633 2.9037 2.69992C2.816 2.80125 2.57148 3.04909 2.57148 3.55381C2.57148 4.05627 2.91208 4.54275 2.95802 4.61262C3.00605 4.68022 3.61406 5.7458 4.57942 6.1558C5.38182 6.49594 5.54479 6.42833 5.71808 6.41268C5.89152 6.39461 6.28014 6.16484 6.35946 5.92604C6.43892 5.68723 6.43892 5.48215 6.41378 5.43939C6.39073 5.39663 6.32609 5.37179 6.23196 5.31999C6.13798 5.2682 5.66989 5.02036 5.58429 4.98663C5.4966 4.95291 5.4339 4.93484 5.3712 5.03843C5.3085 5.13976 5.12668 5.37179 5.07026 5.43939C5.01594 5.507 4.95952 5.51604 4.86555 5.46424C4.77157 5.41245 4.46435 5.30434 4.10295 4.95727C3.82087 4.687 3.63082 4.35122 3.57441 4.24989C3.52008 4.14856 3.56812 4.09225 3.61616 4.04045C3.65791 3.99544 3.71013 3.92105 3.75817 3.86022C3.80621 3.79939 3.82087 3.75889 3.85215 3.68902C3.88342 3.62142 3.86891 3.56059 3.84377 3.50879C3.82087 3.45684 3.63696 2.95228 3.55136 2.74946Z" fill="white" />
+										<defs>
+											<linearGradient id="paint0_linear_716_7479" x1="4.5" y1="9.00007" x2="4.5" y2="0.000107288" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#20B038" />
+												<stop offset="1" stop-color="#60D66A" />
+											</linearGradient>
+											<linearGradient id="paint1_linear_716_7479" x1="4.49991" y1="9" x2="4.49991" y2="0.000175949" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#F9F9F9" />
+												<stop offset="1" stop-color="white" />
+											</linearGradient>
+										</defs>
+									</svg>
+
+								</div>
+							</a>
+							<a href="#" class="links__link">
+								<div class="link__but but but-circle but-circle-mini">
+									<svg>
+										<use href="img/icons/icons.svg#skype"></use>
+									</svg>
+								</div>
+							</a>
+							<a href="#" class="links__link">
+								<div class="link__but but but-circle but-circle-mini">
+									<svg>
+										<use href="img/icons/icons.svg#viber"></use>
+									</svg>
+								</div>
+							</a>
+							<a href="#" class="links__link">
+								<div class="link__but but but-circle but-circle-mini">
+									<svg>
+										<use href="img/icons/icons.svg#gmail"></use>
+									</svg>
+								</div>
+							</a>
+						</nav>
+						<div class="how__copy copy">
+							<input id="copy-link" type="text" class="copy__input" readonly value="www.hidesend.com">
+							<a href="#!" id="copy-but" class="copy__but but-purple">
+								<span>Копировать </span>
+								<svg>
+									<use href="img/icons/icons.svg#copy"></use>
+								</svg>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</div>
+	<div id="reg" aria-hidden="true" class="popup" data-lp>
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__head">
+					<h2 class="popup__title h2">Регистрация</h2>
+					<button data-close type="button" class="popup__close">
+						<svg>
+							<use href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<form data-dev data-popup-message="#confirm" action="#" class="popup__form form">
+					<div class="form__content">
+						<div class="form__str">
+							<div class="form__input">
+								<div class="form__key">Имя</div>
+
+								<div class="form__resetinput">
+								</div>
+
+								<input data-required data-validate data-error="Введите имя" placeholder="Анастасия" type="text">
+							</div>
+						</div>
+						<div class="form__str">
+							<div class="form__input">
+								<div class="form__key">Почта</div>
+
+
+								<input id="mail" data-validate="email" data-required="email" data-error="Введите почту" placeholder="namemail@gmail.com" type="text">
+								<div class="form__resetinput">
+
+								</div>
+							</div>
+						</div>
+						<div class="form__str">
+							<div class="form__input">
+								<div class="form__key">Повторите почту</div>
+
+
+								<input data-validate data-required="repeat" data-repeat="#mail" data-error="Почты не совпадают" placeholder="namemail@gmail.com" type="text">
+								<div class="form__resetinput">
+								</div>
+							</div>
+						</div>
+						<div class="form__str">
+							<div class="form__input input">
+								<div class="form__key">Пароль</div>
+
+								<input id="password" data-required data-validate autocomplete="off" type="password" name="form[]" data-error="Придумайте пароль" placeholder="********">
+								<div class="form__viewpass"></div>
+
+							</div>
+						</div>
+						<div class="form__str">
+							<div class="form__input">
+								<div class="form__key">Повторите пароль</div>
+
+								<input data-validate data-required="repeat" data-repeat="#password" data-error="Пароли не совпадают" placeholder="********" type="text">
+								<div class="form__viewpass"></div>
+							</div>
+						</div>
+						<div class="form__acess">Нажимая кнопку, вы принимаете <a href="#" data-popup="#ua">Пользовательское
+								соглашение</a> и <a href="#" data-popup="#pk">Политику Конфиденциальности</a></div>
+					</div>
+					<button type="submit" class="form__but but-purple">Создать аккаунт</button>
+				</form>
+
+
+
+			</div>
+
+
+
+		</div>
+	</div>
+	<div id="confirm" aria-hidden="true" class="popup" data-lp>
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__head">
+					<h2 class="popup__title h2">Подтвердите Почту</h2>
+					<button data-close type="button" class="popup__close">
+						<svg>
+							<use href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__subcontent">
+					<form action="#" data-dev data-popup-message="#safes" class="form confirm">
+						<div class="confirm__content">
+							<div class="confirm__subtitle subtitle subtitle-light">
+								Мы отправили вам код на name****@gmail.com
+								Пожалуйста, проверьте вашу почту
+							</div>
+							<div class="form__input">
+								<input data-required data-validate data-error="Неверный код" placeholder="Код подтверждения" type="text">
+							</div>
+
+							<button type="submit" class="confirm__but form__but but-purple">Подтвердить</button>
+							<a href="#!" id="replayBut" class="confirm__subbut">Отправить код повторно</a>
+						</div>
+
+					</form>
+
+
+				</div>
+
+				<div id="replay" class="popup__share share">
+					<div class="share__content">
+						<div class="share__title title">Код отправлен</div>
+						<button type="button" class="popup__close share__close">
+							<svg>
+								<use href="img/icons/icons.svg#close"></use>
+							</svg>
+						</button>
+
+						<p class="share__subtitle subtitle">
+							Следует отметить, что новая модель организационной деятельности требует
+						</p>
+
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<div id="confirm-mail" aria-hidden="true" class="popup" data-lp>
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__head">
+					<h2 class="popup__title h2">Посмотрите Почту</h2>
+					<button data-close type="button" class="popup__close">
+						<svg>
+							<use href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__subcontent">
+					<form action="#" class="form confirm">
+						<div class="confirm__content">
+							<div class="confirm__subtitle subtitle subtitle-light">
+								Мы отправили вам письмо на name****@gmail.com
+								Пожалуйста, проверьте вашу почту
+							</div>
+							<div class="confirm__icon">
+								<svg>
+									<use href="img/icons/icons.svg#ready"></use>
+								</svg>
+							</div>
+							<a href="#!" id="replayBut" class="confirm__subbut">Отправить код повторно</a>
+
+						</div>
+
+					</form>
+
+
+				</div>
+
+				<div id="replay" class="popup__share share">
+					<div class="share__content">
+						<div class="share__title title">Код отправлен</div>
+						<button type="button" class="popup__close share__close">
+							<svg>
+								<use href="img/icons/icons.svg#close"></use>
+							</svg>
+						</button>
+
+						<p class="share__subtitle subtitle">
+							Следует отметить, что новая модель организационной деятельности требует
+						</p>
+
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<div id="safes" aria-hidden="true" class="popup" data-lp>
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content-full popup__content-safes">
+				<div class="popup__head">
+					<h2 class="popup__title h2">Выберите Ячейку</h2>
+					<button data-close type="button" class="popup__close">
+						<svg>
+							<use href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__subcontent">
+					<form action="#" class="form popup__safes" data-dev data-popup-message="#safes">
+						<div data-showmore class="safes">
+							<ul data-showmore-content="330" class="safes__content">
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№12432</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№198</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№43566</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№14867</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№16288</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№6785</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№12432</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№198</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№43566</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№14867</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№16288</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№6785</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№12432</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№198</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№43566</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№14867</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№16288</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№6785</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№12432</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№198</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№43566</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№14867</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№16288</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№6785</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№12432</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№198</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№43566</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№14867</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№16288</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№6785</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№12432</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№198</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№43566</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№14867</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№16288</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№6785</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№12432</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№198</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№43566</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№14867</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№16288</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№6785</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№12432</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№198</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№43566</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№14867</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№16288</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№6785</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№12432</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№198</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№43566</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№14867</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№16288</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content safe-lock__content">
+												<span>№6785</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#unlock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+								<li class="safes__safe safe-lock">
+									<div class="safe">
+										<a href="#" class="safe__link">
+											<div class="safe__content">
+												<span>№324</span>
+												<div class="safe__icon">
+													<svg>
+														<use href="img/icons/icons.svg#lock"></use>
+													</svg>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="safes__legs">
+									</div>
+								</li>
+
+
+							</ul>
+
+							<button hidden data-showmore-button="1000" type="button" class="form__but-safes">
+								<span class="form__but safes__but but-purple __more">Показать еще</span>
+								<span class="safes__all">Это были все ячейки</span>
+							</button>
+						</div>
+
+
+
+						<!--<button type="submit" class="form__but safes__but but-purple">Показать Еще</button>-->
+					</form>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20230514035755"></script>
+</body>
+
+</html>

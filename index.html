@@ -1,0 +1,62 @@
+<html>
+
+<head>
+	<title>Верстка</title>
+</head>
+
+<body>
+
+
+	<style>
+		body {
+			font: 15px Arial;
+			padding: 0;
+			margin: 0
+		}
+
+		clr_g {
+			color: #0A0;
+			font-weight: bold
+		}
+
+		clr_b {
+			color: #00A;
+			font-weight: bold
+		}
+
+		clr_r {
+			color: #A00;
+			font-weight: bold
+		}
+	</style>
+
+
+	<div style="width:70%; margin:0 auto; padding:50px 0 0 0; ">
+
+		<h1>Верстка</h1>
+
+		<a href="site.html">Верстка</a>
+
+		<h1>Инфо</h1>
+
+		<ul>
+			<li>Кодировка UTF-8<br><br></li>
+			<li>Верстка адаптивная, градации по ширине лучше подскажет Дима, скорее всего 2 - мобильники вертикальной ориентации и планшеты горизонтальные++<br><br></li>
+			<li>В проекте используется шаблонизатор <a href="http://www.fpublisher.ru/documentation/smarty_doc/language.syntax.variables.docs" target="_blank">SMARTY</a>, то есть вся верстка будет раскидана по шаблонам, и страницы будут собираться из них.<br><br></li>
+			<li>В качестве JavaScript фреймворка используется <a href="https://api.jquery.com/" target="_blank">JQuery</a><br><br></li>
+			<li>Верстка должна содержать все возможные варианты развития событий - например вывод всплывающих окошек, всех ошибок в инпутах не только внутренней верификацией, но и своими скриптами с произвольным текстом, например после ajax запроса на сервер.<br><br><br><br></li>
+			<li>По FTP доступна директория для шаблонов (.tpl) и других файлов (директории img, js, css). Это <clr_g>developer (test)</clr_g> версия.<br>Директория <clr_r>sandbox</clr_r> - <b>для экспериментов</b> на чистом html. Она доступна по ссылке <a href="https://hidesend.com/sandbox/index.html">https://hidesend.com/sandbox/</a><br><br></li>
+			<li>Переключение между <clr_g>test</clr_g> и <clr_b>production</clr_b> версиями по ссылкам <u>http://hidesend.com/goto-test</u> и <u>http://hidesend.com/goto-prod</u><br><br></li>
+			<li>В шаблонах пути к директории изображений, js и css используются с переменной <clr_r>{$VER}</clr_r>,<br>например: <u>/css/{$VER}/style.css</u>, чтоб было удобно копировать файлы не меняя пути между prod и test версиями сайта<br><br></li>
+			<li>Других ссылок на корневые директории сайта нет, то есть если нужна папка например <u>hidesend.com/fonts/</u> - пиши, я сделаю для prod и test версии.<br>Не стоит пихать все в кучу, например ширфты в /css/<br><br></li>
+			<li>Основной шаблон - <clr_b>mаin.tpl </clr_b>. В нем основной каркас от &lt;html&gt; до &lt;/html&gt;. Внутрь вставляются переменные, содержащие контент в зависимости от страницы<br><br></li>
+			<li>Переменные - конструкции вида <clr_g>{$NEWS}</clr_g>, <clr_g>{$BANNER}</clr_g>, итд.<br>Они сожержат текст и кусочки верстки, находящиеся в других шаблонах, в итоге составляется страница целиком<br><br></li>
+			<li>Так же могут быть условия, означающие будет ли выведено что-то в страницу или нет. Например <clr_r>{if $VER=='test'}Номер ячейки:{$VAULT_NUMBER}{/if}</clr_r><br><br></li>
+			<li>Все условия я пропишу, а так же подскажу что в каких переменных и какие части верстки в каких шаблонах находится</li>
+		</ul>
+
+
+
+</body>
+
+</html>
